@@ -3,6 +3,7 @@
 
 ## 参考
 * 書籍：[Effective Ruby](http://amzn.to/2Bpon4G)
+* Web：https://www.effectiveruby.com/
 
 ## 目次
 ### 第1章 Rubyに身体を慣らす
