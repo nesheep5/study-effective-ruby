@@ -37,12 +37,18 @@ class IncAndSub < SuperClass
   include ModuleA
   include ModuleB
   def m
-    p IncAndSub.ancestors
-    super #=> ModuleB
+    p IncAndSub.ancestors #=> [IncAndSub, ModuleB, ModuleA, SuperClass, Object, PP::ObjectMixin, Kernel, BasicObject]
+    super #=> ModuleB (ancestorsの結果の順に遡ってメソッドを探す)
   end
 end
 
 SubClass.new.m
 IncludeModule.new.m
 IncAndSub.new.m
-IncAndSub.ancestors
+
+# 特異メソッドありの場合
+ias = IncAndSub.new
+def ias.m
+  puts 'singular method'
+end
+ias.m
