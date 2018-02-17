@@ -19,3 +19,12 @@ module NoteBooks
 end
 
 NoteBooks::Binding.new # => NameError
+
+# 独自のArrayクラスで、コアライブラリのArrayを呼び出したい場合
+module Module1
+  class Array
+    def initiralze(n)
+      @disks = ::Array.new(n) { |i| "disk#{i}"  }
+    end
+  end
+end
