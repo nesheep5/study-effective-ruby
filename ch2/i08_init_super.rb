@@ -1,5 +1,4 @@
 # initializeのsuperについて
-
 class Parent
   attr_accessor :name
   def initialize

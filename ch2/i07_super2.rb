@@ -51,4 +51,4 @@ ias = IncAndSub.new
 def ias.m
   puts 'singular method'
 end
-ias.m
+ias.m #=> singular method

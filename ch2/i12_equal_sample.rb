@@ -8,3 +8,18 @@
 'foo'.equal?('foo') #=> false
 foo = 'foo'
 foo.equal?(foo) #=> true
+
+
+
+'foo'.equal?('foo') # false
+'foo'.eql?('foo') # true
+'foo' == 'foo' # true
+'foo' === 'foo' #true
+
+
+foo = 'foo'
+foo.equal?(foo) #=> true
+foo.eql?(foo) #=> true
+foo == foo #=> true
+foo === foo #=> true
+
